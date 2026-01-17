@@ -27,6 +27,10 @@ function M.setup()
             vim.bo.filetype = "todo"
             vim.o.textwidth = 110
             vim.keymap.set("n", "tt", toggle_todo, { desc = "toggle the todo" })
+
+            -- leader ta adds a - [] to the current line
+            vim.keymap.set("n", "<leader>tt", "_i- [] <Esc>", { desc = "add a todo item" })
+
         end,
     })
 end
