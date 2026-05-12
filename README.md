@@ -49,17 +49,7 @@ require("todos").setup()
 
 When a `.todo` file is opened:
 - `tt` (normal mode) - Toggle checkbox between `[ ]` and `[x]`
+- `tT` (normal mode) - Toggle the current line and all nested items (sub todos)
+- `<leader>ta` (normal mode) - Add a new todo item to the current line
 
-### Default Settings
 
-- Text width is automatically set to 110 characters for `.todo` files
-
-## 📝 Example
-
-```todo
-- [ ] Write README
-- [x] Implement checkbox toggling
-- [ ] Add more features
-    - [ ] Nested item support
-    - [x] Syntax highlighting
-```
